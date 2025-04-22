@@ -1,0 +1,114 @@
+.search-results-container {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .flight-row {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .flight-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .flight-left img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .flight-name-number {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .airline-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .flight-details-link {
+    font-size: 0.85rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .flight-middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .flight-time {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .flight-duration {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #777;
+    border-radius: 50%;
+  }
+  
+  .flight-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: #1a7431;
+    font-weight: bold;
+  }
+  
+  .discount {
+    font-size: 0.85rem;
+    color: #1a7431;
+  }
+  
+  .book-button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #e64a19;
+  }
+  
