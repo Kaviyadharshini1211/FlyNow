@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Step 5: Expose backend port
-EXPOSE 5000
+EXPOSE 8000
 
 # Step 6: Run the app (since server.js is in src/)
 CMD ["node", "src/server.js"]
