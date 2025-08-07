@@ -10,9 +10,20 @@ import authRoutes from './routes/authRoutes.js';
 dotenv.config();
 const app = express();
 
-// Middleware
+// ✅ Explicitly define allowed origins
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://flynow-eta.vercel.app/'
+];
+
 app.use(cors({
-  origin: '*',
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
@@ -22,7 +33,7 @@ app.use(session({
   secret: process.env.SESSION_SECRET || 'flightSecret123',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false } // use true in production with HTTPS
+  cookie: { secure: false } // Set to true only if using HTTPS in production
 }));
 
 // Routes
