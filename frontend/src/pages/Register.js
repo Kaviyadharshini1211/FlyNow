@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await axios.post(
-        'http://localhost:8000/api/auth/register',
+        'https://flynow-3cve.onrender.com/api/auth/register',
         formData,
         { withCredentials: true }
       );
